@@ -682,7 +682,7 @@ Asteroid = function () {
               -4,  -5]);
 
   this.color = 'lightgray';
-  this.solid = true; 
+  this.solid = true;
   this.visible = true;
   this.scale = 6;
   this.postMove = this.wrapPostMove;
