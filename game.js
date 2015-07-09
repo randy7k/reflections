@@ -682,7 +682,7 @@ Asteroid = function () {
               -4,  -5]);
 
   this.color = 'lightgray';
-  this.solid = true;
+  this.solid = true; 
   this.visible = true;
   this.scale = 6;
   this.postMove = this.wrapPostMove;
@@ -690,7 +690,7 @@ Asteroid = function () {
   this.collidesWith = ["ship", "bullet", "bigalien", "alienbullet"];
 
   this.breakIntoFragments = function () {
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 2; i++) {
       var roid = $.extend(true, {}, this);
       roid.vel.x = Math.random() * 6 - 3;
       roid.vel.y = Math.random() * 6 - 3;
